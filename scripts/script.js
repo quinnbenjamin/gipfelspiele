@@ -127,8 +127,8 @@ function play() {
           <div id="sudoku" class="sudoku-board"></div>
           <div id="button-pad" class="buttons">
             <button class="buttons top-buttons" onclick="press('1')">1</button>
-            <button class="buttons top-buttons" onclick="press('2')">2</button>
-            <button class="buttons top-buttons" onclick="press('3')">3</button>
+            <button class="buttons" onclick="press('2')">2</button>
+            <button class="buttons" onclick="press('3')">3</button>
             <button class="buttons" onclick="press('4')">4</button>
             <button class="buttons" onclick="press('5')">5</button>
             <button class="buttons" onclick="press('6')">6</button>
