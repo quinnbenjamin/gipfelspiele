@@ -90,7 +90,7 @@ button {
 }
 .button-pad {
   margin-top: 20vmin;
-  width: 32vmin;
+  width: 40vmin;
   height: 42vmin;
   display: flex;
   flex-wrap: wrap;
