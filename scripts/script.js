@@ -109,9 +109,9 @@ function addCheckListener() {
 let check = document.getElementById("check");
 check.addEventListener('click',function(){
     if(checkGrid(readGrid())) {
-        alert("Congratulations, the solution is correct!")
+        alert("Herzlichen Glückwunsch, die Lösung ist richtig!")
     } else {
-        alert("Sorry, there are some Errors.")
+        alert("Oops, es sind noch einige Fehler vorhanden.")
     }
 })
 }
