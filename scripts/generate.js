@@ -23,6 +23,9 @@ class sudoku {
         this.shuffle(rounds);
     }
     shuffle(rounds) {
+        if (Math.random() > 0.5) {
+            this.transpose()
+        }
         for (let i = 0; i < rounds; i++) {
             switch (Math.floor(Math.random() * 5)) {
             case 0:
@@ -128,6 +131,16 @@ class sudoku {
     }
     // swap all digit <n>s for <m>s and all <m>s for <n>s
 }
+    transpose() {
+        let new_grid = new Array(9)
+        for (let i=0;i<9;i++) {
+            new_grid[i] = new Array(9)
+            for(let j=0;j<9;j++) {
+                new_grid[i][j] = this.grid[j][i]
+            }
+        }
+        this.grid = new_grid
+    }
     print() {
     for (let i = 0; i < 9; i++) {
         console.log(""+this.grid[i]);
